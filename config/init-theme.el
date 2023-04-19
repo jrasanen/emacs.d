@@ -4,6 +4,11 @@
   :ensure t
   )
 
+(setq ef-themes-mixed-fonts t
+      ef-themes-variable-pitch-ui t)
+
+(mapc #'disable-theme custom-enabled-themes)
+
 ;; Install and configure JetBrains Mono font
 (defun set-jetbrains-mono-font (frame)
   (set-frame-font "JetBrains Mono-16" nil t))
