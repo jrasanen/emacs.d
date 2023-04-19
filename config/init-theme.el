@@ -1,14 +1,19 @@
+;; Install themes
+(use-package ef-themes
+  :straight (:host github :repo "protesilaos/ef-themes" :files ("*.el"))
+  :ensure t
+  )
+
 ;; Install and configure JetBrains Mono font
 (defun set-jetbrains-mono-font (frame)
-  (set-frame-font "JetBrains Mono-12" nil t))
+  (set-frame-font "JetBrains Mono-16" nil t))
 
 (if (daemonp)
     (add-hook 'after-make-frame-functions #'set-jetbrains-mono-font)
   (set-jetbrains-mono-font nil))
 
-;; Define light and dark theme switching functions
-(defvar light-theme 'leuven)
-(defvar dark-theme 'wombat)
+(defvar light-theme 'ef-cyprus)
+(defvar dark-theme 'ef-winter)
 
 (defun light ()
   "Switch to the light theme."

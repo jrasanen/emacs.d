@@ -14,6 +14,7 @@
 (setq undo-limit 40000
       undo-outer-limit 8000000
       undo-strong-limit 100000)
+(recentf-mode)
 
 ;; Bootstrap straight.el
 (setq straight-repository-branch "develop")
@@ -38,7 +39,6 @@
 (add-to-list 'load-path (expand-file-name "config" user-emacs-directory))
 
 (require 'init-packages)
-(require 'init-dashboard)
 (require 'init-marginalia)
 (require 'init-ui)
 (require 'init-lsp)
@@ -58,6 +58,10 @@
 (require 'init-recovery)
 (require 'init-moody)
 (require 'init-general)
+(require 'init-macos)
+(require 'init-helpful)
+(require 'init-tab-bar)
+(require 'init-dashboard)
 
 (provide 'init)
 ;;; init.el ends here
