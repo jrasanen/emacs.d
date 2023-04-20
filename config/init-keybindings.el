@@ -37,6 +37,7 @@
   (global-set-key (kbd "M-RET") 'my/insert-newline-below)
   ))
 
+(global-set-key (kbd "C-o") 'pop-global-mark)
 (global-set-key (kbd "M-RET") 'my/insert-newline-below)
 (define-key key-translation-map (kbd "ESC") (kbd "C-g"))
 
