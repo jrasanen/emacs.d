@@ -39,11 +39,6 @@
   :straight t
   :after lsp)
 
-(use-package yasnippet
-  :ensure t
-  :straight t
-  )
-
 (use-package consult-lsp
   :ensure t
   :straight t

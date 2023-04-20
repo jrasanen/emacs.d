@@ -39,6 +39,8 @@
 (add-to-list 'load-path (expand-file-name "config" user-emacs-directory))
 
 (require 'init-packages)
+
+(require 'init-undo-fu)
 (require 'init-marginalia)
 (require 'init-ui)
 (require 'init-lsp)
@@ -63,6 +65,8 @@
 (require 'init-tab-bar)
 (require 'init-dashboard)
 (require 'init-markdown)
+(require 'init-yas)
+(require 'init-beacon)
 
 (provide 'init)
 ;;; init.el ends here
