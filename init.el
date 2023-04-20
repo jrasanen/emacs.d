@@ -62,6 +62,7 @@
 (require 'init-helpful)
 (require 'init-tab-bar)
 (require 'init-dashboard)
+(require 'init-markdown)
 
 (provide 'init)
 ;;; init.el ends here
