@@ -5,3 +5,6 @@
   :init (setq markdown-command "multimarkdown")
   :bind (:map markdown-mode-map
          ("C-c C-e" . markdown-do)))
+
+(provide 'init-markdown)
+;;; init-markdown.el ends here
