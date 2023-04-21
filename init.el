@@ -67,6 +67,7 @@
 (require 'init-markdown)
 (require 'init-yas)
 (require 'init-beacon)
+(require 'init-discord)
 
 (provide 'init)
 ;;; init.el ends here
