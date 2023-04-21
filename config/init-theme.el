@@ -23,11 +23,13 @@
 (defun light ()
   "Switch to the light theme."
   (interactive)
+  (mapc #'disable-theme custom-enabled-themes)
   (load-theme light-theme t))
 
 (defun dark ()
   "Switch to the dark theme."
   (interactive)
+  (mapc #'disable-theme custom-enabled-themes)
   (load-theme dark-theme t))
 
 ;; Set the initial theme
