@@ -68,6 +68,9 @@
 (require 'init-yas)
 (require 'init-beacon)
 (require 'init-discord)
+(require 'init-avy-ace)
+(require 'init-corfu)
+
 
 (provide 'init)
 ;;; init.el ends here

@@ -6,4 +6,8 @@
   :ensure t
   :straight)
 
+(setq yas-snippet-dirs 
+  (append yas-snippet-dirs
+    '("~/.emacs.d/yas"))) 
+
 (provide 'init-yas)
