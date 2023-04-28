@@ -17,7 +17,7 @@
     (add-hook 'after-make-frame-functions #'set-jetbrains-mono-font)
   (set-jetbrains-mono-font nil))
 
-(defvar light-theme 'ef-cyprus)
+(defvar light-theme 'ef-spring)
 (defvar dark-theme 'ef-winter)
 
 (defun light ()

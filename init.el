@@ -70,7 +70,7 @@
 (require 'init-discord)
 (require 'init-avy-ace)
 (require 'init-corfu)
-
+(require 'init-nyan-mode)
 
 (provide 'init)
 ;;; init.el ends here

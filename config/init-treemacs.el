@@ -1,4 +1,5 @@
 (use-package treemacs
+  :straight t
   :ensure t
   :defer t
   :init
@@ -93,10 +94,21 @@
 
 (use-package treemacs-icons-dired
   :hook (dired-mode . treemacs-icons-dired-enable-once)
-  :ensure t)
+  :ensure t
+  :straight t
+  )
 
 (use-package treemacs-magit
   :after (treemacs magit)
-  :ensure t)
+  :ensure t
+  :straight t
+  )
+
+(use-package treemacs-all-the-icons
+  :ensure t
+  :straight t
+  )
+
+(treemacs-load-theme "all-the-icons")
 
 (provide 'init-treemacs)
